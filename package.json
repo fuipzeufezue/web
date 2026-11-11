@@ -1,0 +1,33 @@
+{
+  "name": "osther",
+  "version": "1.0.0",
+  "description": "OSTHER — Osmen's short story library",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "import": "node scripts/import-stories.mjs",
+    "covers": "node scripts/generate-covers.mjs",
+    "assets": "npm run import && npm run covers"
+  },
+  "keywords": [],
+  "author": "Osmen",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource/amiri": "^5.3.0",
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "pdfjs-dist": "^4.10.38",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}
